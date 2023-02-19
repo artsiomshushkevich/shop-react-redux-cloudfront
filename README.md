@@ -1,6 +1,6 @@
 # Shushman shop
 
-## Task 2 URL
+## Task 2 URLs
 
 1. [Cloudfront](https://d2m8vhru06o3ii.cloudfront.net/)
 2. [S3 index.html](https://shushmanshop.s3.eu-central-1.amazonaws.com/index.html)
