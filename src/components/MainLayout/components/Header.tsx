@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            Shushman store
+            Shushman store!
           </Link>
         </Typography>
 
