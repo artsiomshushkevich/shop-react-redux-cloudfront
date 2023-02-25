@@ -1,4 +1,9 @@
-# React-shop-cloudfront
+# Shushman shop
+
+## Task 2 URLs
+
+1. [Cloudfront](https://d2m8vhru06o3ii.cloudfront.net/)
+2. [S3 index.html](https://shushmanshop.s3.eu-central-1.amazonaws.com/index.html)
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
