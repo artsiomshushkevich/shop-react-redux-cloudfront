@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "vite",
+    "start": "vite --open",
+    "start:real": "VITE_USE_REAL_DATA=true npm start",
     "build": "tsc && vite build",
     "preview": "npm run build && vite preview",
     "test": "vitest",
