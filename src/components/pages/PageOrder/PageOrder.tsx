@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import PaperLayout from "~/components/PaperLayout/PaperLayout";
 import Typography from "@mui/material/Typography";
-import API_PATHS from "~/constants/apiPaths";
+import { API_PATHS } from "~/constants/apiPaths";
 import { CartItem } from "~/models/CartItem";
 import { AvailableProduct } from "~/models/Product";
 import ReviewOrder from "~/components/pages/PageCart/components/ReviewOrder";
@@ -43,7 +43,7 @@ export default function PageOrder() {
       queryKey: "products",
       queryFn: async () => {
         const res = await axios.get<AvailableProduct[]>(
-          `${API_PATHS.bff}/product/available`
+          `${API_PATHS.product}/product/available`
         );
         return res.data;
       },

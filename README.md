@@ -27,6 +27,10 @@ This is frontend starter project for nodejs-aws mentoring program. It uses the f
 
 Starts the project in dev mode with mocked API on local environment.
 
+### `start:real`
+
+Starts the project in dev mode with data taken from AWS services.
+
 ### `build`
 
 Builds the project for production in `dist` folder.
