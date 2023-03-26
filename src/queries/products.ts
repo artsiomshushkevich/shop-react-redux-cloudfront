@@ -49,7 +49,7 @@ export function useImportProducts(fileName: string) {
           Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
         },
       }),
-    { enabled: !!fileName }
+    { enabled: !!fileName, cacheTime: 0 }
   );
 }
 
