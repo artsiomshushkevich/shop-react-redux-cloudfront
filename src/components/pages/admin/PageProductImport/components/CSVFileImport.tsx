@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useImportProducts } from "~/queries/products";
