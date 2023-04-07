@@ -37,6 +37,22 @@ export function useAvailableProduct(id?: string) {
   );
 }
 
+export function useImportProducts(fileName: string) {
+  return useQuery(
+    ["presignedPutLink", fileName],
+    () =>
+      axios.get(`${API_PATHS.import}/import`, {
+        params: {
+          name: fileName,
+        },
+        headers: {
+          Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
+        },
+      }),
+    { enabled: !!fileName, cacheTime: 0 }
+  );
+}
+
 export function useRemoveProductCache() {
   const queryClient = useQueryClient();
   return React.useCallback(
